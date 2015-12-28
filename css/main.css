@@ -9,6 +9,33 @@
   padding: 0;
 }
 
+header {
+  height: 100vh;
+  width: 100%;
+  /*background-image: url("http://static.thousandwonders.net/Flatirons.original.1106.jpg");*/
+  background: url(../img/header-bg-min.jpg) center;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+        header h1 {
+          text-align: center;
+          text-transform: uppercase;
+          color: black;
+          font-size: 80px;
+          font-family: Arial;
+          letter-spacing: 0.05em;
+          line-height: 700px;
+        }
+
+        header h1 span {
+          padding: 0.25em;
+          border: #000 solid 10px;
+        }
+
 body, html {
   margin: 0;
   padding: 0;
@@ -29,13 +56,6 @@ h1, h2, h3, h4, h5 {
 
 header, nav, footer, section, article, div {
   box-sizing: border-box;
-}
-
-header {
-  /*height: 1500px;*/
-  background: #36ab99;
-  width: 100%;
-  position: fixed;
 }
 
 
@@ -108,12 +128,7 @@ hr {
  *
  */
 
-.header {
-  /*height: 1500px;*/
-  background-color: #367cb5;
-}
-
-.parallax-bg {
+/*.parallax-bg {
   padding: 300px 0;
   width: 100%;
   background-image: url("http://static.thousandwonders.net/Flatirons.original.1106.jpg");
@@ -130,7 +145,7 @@ hr {
   color: #FFF;
   font-size: 80px;
   font-family: Arial;
-}
+}*/
 
 /* ------------------------------------------------------------------------------------ */
 
@@ -159,6 +174,7 @@ hr {
 
 .projects h1 {
   text-align: center;
+  line-height: 500px;
   text-transform: uppercase;
   color: #367cb5;
   font-size: 80px;
@@ -188,6 +204,7 @@ hr {
 
  .me h1 {
   text-align: center;
+  line-height: 500px;
   text-transform: uppercase;
   color: #367cb5;
   font-size: 80px;
@@ -214,6 +231,7 @@ hr {
 
  .contact h1 {
   text-align: center;
+  line-height: 500px;
   text-transform: uppercase;
   color: #367cb5;
   font-size: 80px;
@@ -311,14 +329,14 @@ hr {
  *
  */
 
-.navbar {
+/*.navbar {
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
   height: 50px;
   background-color: green;
 
-}
+}*/
 
 .nav {
   width: 100%;
@@ -328,34 +346,34 @@ hr {
   opacity: 0.7;
 }
 
-.nav__list {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  height: 50px;
-}
+      .nav__list {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        height: 50px;
+      }
 
-.nav__item {
-  box-sizing: border-box;
-  display: inline-block;
-  width: 24%;
-  height: 100%;
-  text-align: center;
-  line-height: 48px;
-  padding: 0;
-  text-transform: uppercase;
-}
+      .nav__item {
+        box-sizing: border-box;
+        display: inline-block;
+        width: 24%;
+        height: 100%;
+        text-align: center;
+        line-height: 48px;
+        padding: 0;
+        text-transform: uppercase;
+      }
 
-.nav a {
-  text-decoration: none;
-  color: #616161;
-}
+      .nav a {
+        text-decoration: none;
+        color: #616161;
+      }
 
-.nav a:hover {
-  text-decoration: underline;
-  color: #212121;
-}
+      .nav a:hover {
+        text-decoration: underline;
+        color: #212121;
+      }
 
 
 /*

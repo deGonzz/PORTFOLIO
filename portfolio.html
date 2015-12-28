@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Framework Test Page</title>
   <link rel="stylesheet" href="css/main.css">
   <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
@@ -16,15 +17,14 @@
   </script>
 </head>
 <body>
-  <div id="homeSection" class="header">
-    <div class="parallax-bg">
-      <h1>Louis BOUDDHOU</h1>
-    </div>
-  </div>
-<!--   <div id="menu">
-    <h2>Menu Here</h2>
-  </div> -->
-  <div id="content">
+  <header id="homeSection">
+      <h1>
+        <span>Louis BOUDDHOU</span>
+      </h1>
+  </header>
+
+  <div class="content" id="content">
+
     <div class="nav" id="mynav">
       <ul class="nav__list">
         <li class="nav__item"><a id="home" href="#homeSection">Home</a></li>
@@ -33,40 +33,30 @@
         <li class="nav__item"><a id="contact" href="#contactSection">Contact</a></li>
       </ul>   
     </div>
-  
     <div id="projectsSection" class="projects">
-      <!-- <img src="http://placehold.it/300x300">
-      <img src="http://placehold.it/300x300"> -->
       <h1> PROJECTS HERE </h1>
     </div>
-
-
-  <div id="meSection" class="me">
-    <h1> INFO ABOUT ME HERE </h1>
+    <div id="meSection" class="me">
+      <h1> INFO ABOUT ME HERE </h1>
+    </div>
+    <div id="contactSection" class="contact">
+      <h1> CONTACT ME HERE </h1>
+    </div>
   </div>
-
-
-  <div id="contactSection" class="contact">
-    <h1> CONTACT ME HERE </h1>
-  </div>
-
-
-
 
   <script type="text/javascript">
       (function() {
 
         var documentEl = $(document),
-            parallaxBg = $('div.parallax-bg');
+            headerBg = $('header');
 
         documentEl.on('scroll', function() {
             var currScrollPos = documentEl.scrollTop();
-            parallaxBg.css('background-position', '0 ' + -currScrollPos/3 + 'px');
+            headerBg.css('background-position', '0 ' + -currScrollPos/3 + 'px');
         });
 
     }) ();
   </script>
-
 </body>
 </html>
 
